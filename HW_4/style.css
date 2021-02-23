@@ -1,0 +1,143 @@
+/** Тело **/
+
+body {
+    background: #f8f8f8;
+}
+
+
+/** Шапка сайта (логотип) **/
+
+.logo {
+    text-decoration: none;
+    font-size: 30px;
+    font-family: fantasy;
+    color: #336699;
+}
+
+
+/** Шапка сайта (меню) **/
+
+.menu li {
+    list-style-type: none;
+}
+
+.menu li a {
+    color: #336699;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    color: dodgerblue;
+}
+
+
+/** Главная (контент) **/
+
+.index_content h1,
+.product_content h1 {
+    text-align: center;
+    font-size: 30px;
+    font-family: fantasy;
+}
+
+.index_content table {
+    width: 300px;
+    height: 200px;
+    border-collapse: collapse;
+}
+
+.index_content table td {
+    border: 1px solid #000;
+}
+
+.index_content table tr:nth-child(1) {
+    height: 100px;
+}
+
+
+/** Каталог (контент) **/
+
+.catalog_content a {
+    text-decoration: none;
+    color: #336699;
+}
+
+.catalog_content a:hover {
+    color: dodgerblue;
+}
+
+
+/** Товар (контент) **/
+
+.product_content a img {
+    outline: 2px solid black;
+}
+
+.product_content a img:hover {
+    outline: none;
+}
+
+h2 {
+    color: black;
+    font-size: 18px;
+    font-weight: 400;
+    background-color: #eaeaea;
+}
+
+.short_description {
+    color: #707070;
+    font-size: 14px;
+    font-style: italic;
+    line-height: 16px;
+}
+
+.description + p {
+    color: #484343;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.short_description:first-letter,
+.description:first-letter {
+    font-size: 20px;
+    color: red;
+}
+
+
+/** Контакты (контент) **/
+
+.form label input,
+.form label textarea {
+    width: 200px;
+    height: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    font-style: italic;
+    color: #336699;
+    text-transform: capitalize;
+}
+
+.form label textarea {
+    width: 273px;
+    height: 100px;
+}
+
+.form label input[name="name"] {
+    margin-left: 30px;
+}
+
+.form label input[name="email"] {
+    margin-left: 21px;
+}
+
+.form label input[name="email"]:focus {
+    color: dodgerblue;
+    background-color: #bdbdbd;
+}
+
+.form label input[name="message_theme"] {
+    margin-left: 26px;
+}

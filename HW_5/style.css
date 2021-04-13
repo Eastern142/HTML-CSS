@@ -1,0 +1,333 @@
+/* Тело */
+html,
+body {
+    background-color: #f8f8f8;
+    box-sizing: border-box;
+}
+
+/* Контейнер */
+.container {
+    width: 1024px;
+    margin: 0 auto;
+}
+
+/* Шрифты / Цвет */
+.menu li a,
+.footer p,
+.index_content p,
+.address h3,
+.address p,
+.feedback h3,
+.feedback fieldset label,
+.product_item a,
+.item_content h2,
+.item_buy_element p,
+.item_description p,
+.item_description h3,
+.item_description a,
+.detailed_description h3,
+.detailed_description p,
+.close_detailed_description,
+.close_characteristics,
+.characteristics table tr td {
+    color: #bdbdbd;
+    font-family: 'Play', sans-serif;
+}
+.form fieldset input,
+.form fieldset textarea {
+    text-transform: capitalize;
+    font-family: 'Play', sans-serif;
+}
+
+/* Шапка / Footer */
+.header,
+.footer {
+    height: 60px;
+    background-color: #222222;
+}
+.header {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.footer {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+.footer p {
+    float: right;
+    text-align: right;
+    margin: 25px 50px 0 0;
+}
+
+/* Логотип */
+.logo {
+    float: left;
+    height: 60px;
+}
+.logo img {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+/* Меню (item_content) */
+.menu {
+    float: right;
+    margin: 25px 50px 0 0;
+    padding: 0;
+}
+.menu li {
+    list-style-type: none;
+    display: inline;
+}
+.menu li:nth-child(1),
+.menu li:nth-child(2) {
+    margin: 0 25px 0 0;
+}
+.menu li a,
+.item_description a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.menu li a:hover {
+    color: red;
+}
+
+/* Контент (index / contacts / catalog / item_content) */
+.index_content,
+.contacts_content,
+.catalog_content,
+.item_content {
+    height: 500px;
+    background-image: url(img/background_content.jpg);
+    background-size: 1024px 500px;
+}
+.index_content p {
+    float: left;
+    margin: 25px 25px 0 25px;
+    font-size: 18px;
+}
+.index_content img {
+    height: 130px;
+}
+.index_content img:nth-of-type(1) {
+    margin: 10px 0 0 25px;
+}
+.index_content img:nth-of-type(4) {
+    margin: 10px 0 0 25px;
+}
+
+/* Контент (catalog) */
+.product_item {
+    display: inline-block;
+    margin: 10px 0 0 10px;
+}
+.product_item a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+}
+.red_hover:hover {
+    color: red;
+}
+.green_hover:hover {
+    color: #44d62c;
+}
+.product_item a img,
+.item_buy_element a img {
+    width: 200px;
+    height: 170px;
+}
+
+/* Контент (item) */
+.item_content > h2 {
+    margin: 0 auto;
+    width: 512px;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    font-size: 20px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #222222;
+}
+.item_content h2 span:nth-of-type(1) {
+    margin-right: 30px;
+}
+.item_content h2 span:nth-of-type(2) {
+    margin-left: 30px;
+}
+.item_buy_element a:nth-of-type(1) {
+    display: inline-block;
+    margin: 10px 0 0 26px;
+}
+.item_buy_element a:nth-of-type(1):hover {
+    outline: 1px solid white;
+}
+.item_buy_element p {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.buy_button,
+.close_detailed_description,
+.close_characteristics {
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Play', sans-serif;
+    font-weight: bold;
+    display: block;
+    width: 150px;
+    height: 30px;
+    line-height: 30px;
+    margin: 20px auto 0 auto;
+    border-radius: 5px;
+    background-color: #bdbdbd;
+    color: black;
+}
+.close_characteristics {
+    margin: 10px auto 0 auto;
+}
+.red_buy_button:hover {
+    background-color: red;
+    color: #bdbdbd;
+}
+.green_buy_button:hover {
+    background-color: #44d62c;
+    color: black;
+}
+.item_buy_element {
+    width: 24%;
+}
+.item_description {
+    width: 76%;
+}
+.item_description h3 {
+    text-align: center;
+    text-transform: uppercase;
+    width: 400px;
+    margin: 20px auto 0 auto;
+}
+.item_description p {
+    font-size: 18px;
+    margin: 16px;
+}
+.item_description a {
+    margin-left: 16px;
+}
+.item_description a span:nth-of-type(1) {
+    margin-right: 10px;
+}
+.item_description a span:nth-of-type(2) {
+    margin-left: 10px;
+}
+.item_description p::first-letter,
+.detailed_description p::first-letter {
+    color: red;
+}
+.detailed_description h3 {
+    text-transform: uppercase;
+    margin: 0 0 0 50px;
+}
+.detailed_description h3:nth-of-type(1) {
+    margin-top: 10px;
+}
+.detailed_description p {
+    margin: 10px 16px;
+}
+.characteristics_table {
+    font-size: 11px;
+    margin: 10px 10px 0 10px;
+    border-collapse: collapse;
+    width: 98%;
+}
+.characteristics_table tr td {
+    border: 1px solid #bdbdbd;
+}
+.characteristics_table tr td:first-of-type {
+    border-left: none;
+}
+.characteristics_table tr td:last-of-type {
+    border-right: none;
+}
+.characteristics_table tr:first-of-type td {
+    border-top: none;
+}
+.characteristics_table tr:last-of-type td {
+    border-bottom: none;
+}
+.characteristics_table tr td:nth-child(2),
+.characteristics_table tr td:nth-child(3),
+.characteristics_table tr td:nth-child(4) {
+    text-align: center;
+}
+
+/* Контент (contacts / item_content)*/
+.address,
+.feedback {
+    width: 50%;
+    height: 500px;
+}
+.address,
+.item_buy_element {
+    float: left;
+}
+.feedback,
+.item_description {
+    float: right;
+}
+.address h3,
+.feedback h3 {
+    text-align: center;
+    margin: 5px 0 0 0;
+}
+.address p {
+    margin: 5px 0 0 5px;
+}
+.address iframe {
+    margin: 5px 0 0 5px;
+}
+.form fieldset {
+    border-radius: 5px;
+    width: 400px;
+    margin: 5px auto 0 auto;
+    opacity: 80%;
+}
+.form fieldset label,
+.form fieldset input,
+.form fieldset textarea {
+    width: 100%;
+}
+.form fieldset label,
+.form fieldset input {
+    line-height: 25px;
+}
+.form fieldset input,
+.form fieldset textarea {
+    border-radius: 5px;
+}
+.form fieldset textarea {
+    height: 145px;
+    resize: none;
+}
+.form fieldset input[name='email']:focus {
+    background-color: #222222;
+    color: red;
+}
+.form fieldset input[type='submit'],
+.form fieldset input[type='reset'] {
+    width: 180px;
+    display: inline-block;
+    margin: 10px 0 0 0;
+    text-transform: uppercase;
+}
+.form fieldset input[type='submit']:hover,
+.form fieldset input[type='reset']:hover {
+    font-weight: bold;
+    color: #bdbdbd;
+    background-color: red;
+}
+.form fieldset input[type='submit'] {
+    float: left;
+}
+.form fieldset input[type='reset'] {
+    float: right;
+}

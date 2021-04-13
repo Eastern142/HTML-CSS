@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Razer Goliathus Mobile</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+
+<body>
+    <!-- Контейнер -->
+    <div class="container">
+        <!-- Шапка -->
+        <div class="header">
+            <!-- Логотип -->
+            <a href="../index.html" class="logo"><img src="../img/logo.png" alt="PowerToPlay"></a>
+            <!-- Меню -->
+            <ul class="menu">
+                <li><a href="../index.html">главная</a></li>
+                <li><a href="../catalog.html">каталог</a></li>
+                <li><a href="../contacts.html">контакты</a></li>
+            </ul>
+        </div>
+        <!-- Контент -->
+        <div class="item_content">
+            <h2><span>&#9658;</span>Razer Goliathus Mobile<span>&#9668;</span></h2>
+            <div class="item_buy_element">
+                <a href="#"><img src="../img/razer_goliathus_mobile.png" alt="Razer Goliathus Mobile" title="Razer Goliathus Mobile"></a>
+                <p>Цена: 999 &#8381</p>
+                <a href="#" class="buy_button green_buy_button">купить</a>
+            </div>
+            <div class="item_description">
+                <h3>описание:</h3>
+                <p>Что делать, когда ты&nbsp;играешь не&nbsp;дома? Так сложно не&nbsp;сдавать позиций без привычных игровых приспособлений. Представляем Razer Goliathus Mobile&nbsp;&mdash; мобильный коврик для мыши. Идеальное соотношение контроля и&nbsp;скорости.</p>
+                <a href="#" class="detailed_description_link green_hover"><span>&#9658;</span>подробное описание<span>&#9668;</span></a>
+                <a href="#" class="characteristics_link green_hover"><span>&#9658;</span>характеристики<span>&#9668;</span></a>
+            </div>
+            <div class="detailed_description">
+                <h3>тонкий и&nbsp;гибкий&nbsp;&mdash; максимальная мобильность</h3>
+                <p>Razer Goliathus Mobile, при толщине всего 1,5&nbsp;мм, можно запросто всегда носить с&nbsp;собой. Можно, к&nbsp;примеру, вложить его внутрь ноутбука или свернуть трубочкой и&nbsp;сунуть в&nbsp;сумку, не&nbsp;боясь, что он&nbsp;потом не&nbsp;развернется.</p>
+                <h3>баланс контроля и&nbsp;скорости</h3>
+                <p>Когда проектируешь коврик для геймеров, которые всегда в&nbsp;разъездах, важно соблюсти баланс, чтобы один и&nbsp;тот&nbsp;же коврик подходил для разных стилей игры. В&nbsp;результате обширных исследований и&nbsp;практических испытаний родился Razer Goliathus Mobile&nbsp;&mdash; его гладкая поверхность обеспечивает и&nbsp;быстрое скольжение, и&nbsp;точность остановки для контроля в&nbsp;игре.</p>
+                <h3>оптимальная поверхность для точного отслеживания движений</h3>
+                <p>Razer Goliathus Mobile был создан благодаря пристальному вниманию к&nbsp;деталям. Микротекстура тканой поверхности отлично подходит как для оптических, так и&nbsp;для лазерных мышек. Это идеальная поверхность для турниров, где важно точное отслеживание движений. Малейшее перемещение будет замечено и&nbsp;с&nbsp;точностью скопировано на&nbsp;экран.</p>
+                <a href="#" class="close_detailed_description green_buy_button">закрыть</a>
+            </div>
+            <div class="characteristics">
+                <table class="characteristics_table" cellpadding="3">
+                    <tr>
+                        <td>Материал покрытия:</td>
+                        <td>Ткань</td>
+                    </tr>
+                    <tr>
+                        <td>Материал основания:</td>
+                        <td>Резина</td>
+                    </tr>
+                    <tr>
+                        <td>Размеры:</td>
+                        <td>215 x 270 x 1.50 мм</td>
+                    </tr>
+                </table>
+                <a href="#" class="close_characteristics green_buy_button">закрыть</a>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer">
+            <p>2021 &copy; Все права защищены</p>
+        </div>
+    </div>
+    <script>
+        /* Кнопки */
+        let detailed_description_link = document.querySelector('.detailed_description_link');
+        let close_detailed_description = document.querySelector('.close_detailed_description');
+        let characteristics_link = document.querySelector('.characteristics_link');
+        let close_characteristics = document.querySelector('.close_characteristics');
+        /* Блоки */
+        let detailed_description = document.querySelector('.detailed_description');
+        let characteristics = document.querySelector('.characteristics');
+        /* Скрытие блоков */
+        detailed_description.style.display = 'none';
+        characteristics.style.display = 'none';
+
+        detailed_description_link.addEventListener('click', function () {
+            if (detailed_description.style.display == 'none') {
+                document.querySelector('.item_buy_element').style.display = 'none';
+                document.querySelector('.item_description').style.display = 'none';
+                detailed_description_link.style.display = 'none';
+                characteristics_link.style.display = 'none'
+                detailed_description.style.display = 'block';
+            } else {
+                detailed_description.style.display = 'none';
+                document.querySelector('.item_buy_element').style.display = 'block';
+                document.querySelector('.item_description').style.display = 'block';
+                detailed_description_link.style.display = 'inline-block';
+                characteristics_link.style.display = 'inline-block';
+            }
+        })
+
+        close_detailed_description.addEventListener('click', function () {
+            if (detailed_description.style.display == 'block') {
+                detailed_description.style.display = 'none';
+                document.querySelector('.item_buy_element').style.display = 'block';
+                document.querySelector('.item_description').style.display = 'block';
+                detailed_description_link.style.display = 'inline-block';
+                characteristics_link.style.display = 'inline-block';
+            } else {
+                detailed_description.style.display = 'block';
+                document.querySelector('.item_buy_element').style.display = 'none';
+                document.querySelector('.item_description').style.display = 'none';
+                detailed_description_link.style.display = 'none';
+                characteristics_link.style.display = 'none';
+                }
+            })
+
+        characteristics_link.addEventListener('click', function () {
+            if (characteristics.style.display == 'none') {
+                document.querySelector('.item_buy_element').style.display = 'none';
+                document.querySelector('.item_description').style.display = 'none';
+                detailed_description_link.style.display = 'none';
+                characteristics_link.style.display = 'none'
+                characteristics.style.display = 'block';
+            } else {
+                characteristics.style.display = 'none';
+                document.querySelector('.item_buy_element').style.display = 'block';
+                document.querySelector('.item_description').style.display = 'block';
+                detailed_description_link.style.display = 'inline-block';
+                characteristics_link.style.display = 'inline-block';
+            }
+        })
+
+        close_characteristics.addEventListener('click', function () {
+            if (characteristics.style.display == 'block') {
+                characteristics.style.display = 'none';
+                document.querySelector('.item_buy_element').style.display = 'block';
+                document.querySelector('.item_description').style.display = 'block';
+                detailed_description_link.style.display = 'inline-block';
+                characteristics_link.style.display = 'inline-block';
+            } else {
+                characteristics.style.display = 'block';
+                document.querySelector('.item_buy_element').style.display = 'none';
+                document.querySelector('.item_description').style.display = 'none';
+                detailed_description_link.style.display = 'none';
+                characteristics_link.style.display = 'none';
+                }
+            })
+    </script>
+</body>
+
+</html>
